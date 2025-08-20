@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Qwitcher Grypen";
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(172, 74, 74);
+  display: flex;
+}
+
+.container {
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 26px;
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.converter-form {
+  background: hsl(0, 0%, 100%);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #333;
+}
+
+label span {
+  font-size: 60px;
+  margin-bottom: 6px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+  transition: all 0.2s;
+}
+
+input:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 4px rgba(74, 144, 226, 0.3);
+  outline: none;
+}
+
+.currency {
+  text-transform: uppercase;
+}
+
+button {
+  padding: 10px;
+  background: #4a90e2;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.5s all ease;
+}
+
+button:hover {
+  background: #357abd;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+button:active {
+  text-decoration: line-through;
+  transform: scale(1.1);
+  background: #2c5f94;
+}
+
+#new-currency {
+  background: #f9f9f9;
+  font-weight: bold;
+  color: #333;
+}
+
+@media (max-width: 500px) {
+  .converter-form {
+    padding: 15px;
+  }
+  .title {
+    font-size: 22px;
+  }
+}
